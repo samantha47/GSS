@@ -29,7 +29,13 @@ First question - Is opinion on the death penalty (CAPPUN) independent of gun own
 
 ## Methods
 
-Question: is gun ownership independent of opinion on capital punshiment
+Question: is gun ownership independent of opinion on capital punishment.
+
+$H_0$:gun ownership and opinion on capital punishment are not related.
+
+$H_A$: gun ownership and opinion on capital punishment are related.
+
+OWNGUN-CAPPUN both are categorical,thus is use cat-cat
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
@@ -42,6 +48,14 @@ Question: is gun ownership independent of opinion on capital punshiment
 #### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+barchartGC(~OWNGUN + CAPPUN,data=GSSdata)
+barchartGC(~OWNGUN + CAPPUN,data=GSSdata, type="percent")
+
+```
+
+
 
 #### Numerical Descriptive Results
 
