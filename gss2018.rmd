@@ -56,6 +56,7 @@ barchartGC(~OWNGUN + CAPPUN,data=GSSdata, type="percent")
 ```
 
 
+This bar chart shows gun owners are more likly to favor capital punishment.
 
 #### Numerical Descriptive Results
 
